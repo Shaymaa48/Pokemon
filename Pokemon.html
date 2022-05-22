@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Pokemon.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper blue-grey darken-4">
+        <a href="#" class="brand-logo center">Pokemon</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li>
+            <a href="search.html"
+              ><i class="material-icons" id="searchBar">search</i></a
+            >
+          </li>
+          <li>
+            <a href="Pokemon.html"><i class="material-icons">home</i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" id="img-click">
+      <button class="view-btn" id="btn"></button>
+      <switch class="switch"
+        ><button class="cap-btn" id="btnc"></button
+      ></switch>
+      <label class="c"><input type="checkbox" value="capture" />Captured</label>
+    </div>
+
+    <div id="myModal" class="popup">
+      <!-- Modal content -->
+      <div class="popup-content">
+        <div class="popup-header">
+          <span class="end">×</span>
+          <h2></h2>
+        </div>
+        <div class="popup-body">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="model-popup" id="myForm">
+      <form class="form-container">
+        <button class="material-icons" type="button" onclick="closeForm()">
+          close
+        </button>
+      </form>
+    </div>
+
+    <footer class="page-footer blue-grey darken-4">
+      <div class="footer-copyright">
+        <div class="container">© 2022 Copyright</div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="Pokemon.js"></script>
+  </body>
+</html>

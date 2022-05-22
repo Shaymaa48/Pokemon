@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="pokemon-data.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper blue-grey darken-4">
+        <a href="#" class="brand-logo center">Pokemon Search</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li>
+            <a href="search.html"><i class="material-icons">search</i></a>
+          </li>
+          <li>
+            <a href="Pokemon.html"><i class="material-icons">home</i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container flex-center">
+      <div class="search-container col-md-5 col-sm-5">
+        <input
+          type="text"
+          class="form-control"
+          id="search_q"
+          placeholder="Search pokemon by name"
+        />
+        <button class="btn-search" id="search-btn">
+          <i class="material-icons">search</i>
+        </button>
+      </div>
+      <div
+        id="show_error"
+        class="hidden alert alert-danger alert-dismissible fade"
+        role="alert"
+      >
+        We don't know this Pokemon
+      </div>
+      <div class="col-md-5 col-sm-5 pokemon-card" id="pokemon_details">
+        <div class="img-container">
+          <img
+            id="update_img"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="detail-container">
+          <div class="title-container">
+            <h3 class="name text-center" id="update_name">Pikachu</h3>
+            <div class="stats text-center">
+              <span class="first cp-text col-md-6" id="update_hp"
+                >HP 32/32</span
+              >
+              <span class="cp-text col-md-6" id="update_cp">XP 149</span>
+            </div>
+          </div>
+          <div class="attributes-container">
+            <div class="col attributes-content" style="min-width: 42%">
+              <small class="text-muted">Type:</small>
+              <small class="text" id="update_type">Electric, Speed</small>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer blue-grey darken-4">
+      <div class="footer-copyright">
+        <div class="container">© 2022 Copyright</div>
+      </div>
+    </footer>
+    <script src="pokemon-data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
